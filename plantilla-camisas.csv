@@ -1,0 +1,5 @@
+id,nombre,precio,etiqueta,imagen_frente,imagen_espalda,modelo,color,activo
+oversize-negra,Camisa Oversize Negra,89000,Más vendido,,,oversize,negro,SI
+oversize-blanca,Camisa Oversize Blanca,89000,Nuevo,,,oversize,blanco,SI
+grafito-personalizada,Camisa Grafito Personalizada,95000,,,,clasica,gris,SI
+edicion-limitada,Camisa Edición Limitada,120000,Edición limitada,,,oversize,negro,SI
