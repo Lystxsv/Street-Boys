@@ -708,3 +708,18 @@ main { padding-top: var(--nav-h); }
 .card:hover .card__media > img:not(.card__img--alt) { transform: scale(1.04); }
 .card__media .card__img--alt { opacity: 0; transition: opacity var(--t-med) var(--ease); }
 .card:hover .card__media .card__img--alt { opacity: 1; }
+
+/* ---------- 10k. Logo real ---------- */
+.logo-img { display: block; height: 52px; width: auto; border-radius: 6px; }
+.footer__brand .logo-img { height: 72px; }
+.footer__grid { grid-template-columns: 1.6fr 1fr; }
+@media (max-width: 900px) { .footer__grid { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 480px) { .footer__grid { grid-template-columns: 1fr; } }
+
+/* ---------- 10l. Galería "Así se ven" ---------- */
+.showcase { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--sp-3); transition-delay: var(--d, 0s); }
+.showcase li { transition-delay: var(--d, 0s); }
+.showcase figure { margin: 0; aspect-ratio: 4 / 5; overflow: hidden; border-radius: var(--radius); background: var(--sb-black); }
+.showcase img { width: 100%; height: 100%; object-fit: cover; transition: transform 1s var(--ease); }
+.showcase li:hover img { transform: scale(1.05); }
+@media (max-width: 700px) { .showcase { grid-template-columns: 1fr; } }

@@ -12,7 +12,7 @@
   // Menú móvil
   const setMenu = (open) => {
     toggle.setAttribute('aria-expanded', String(open));
-    toggle.setAttribute('aria-label', open ? 'Cerrar menú' : 'Abrir menú');
+    toggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
     links.classList.toggle('is-open', open);
     document.body.style.overflow = open ? 'hidden' : '';
   };
@@ -27,7 +27,7 @@
   window.StreetBoys = window.StreetBoys || {};
   window.StreetBoys.setCartCount = (n) => {
     cartCount.textContent = n;
-    cartBtn.setAttribute('aria-label', `Carrito, ${n} ${n === 1 ? 'producto' : 'productos'}`);
+    cartBtn.setAttribute('aria-label', `Cart, ${n} ${n === 1 ? 'item' : 'items'}`);
     cartCount.classList.add('is-bump');
     setTimeout(() => cartCount.classList.remove('is-bump'), 200);
   };
@@ -40,12 +40,12 @@
       const input = nl.querySelector('input[type="email"]');
       const msg = document.getElementById('nl-msg');
       if (!input.checkValidity()) {
-        msg.textContent = 'Escribe un correo válido.';
+        msg.textContent = 'Enter a valid email.';
         input.focus();
         return;
       }
       // TODO: enviar input.value al servicio de correo (Mailchimp, Klaviyo, etc.)
-      msg.textContent = '¡Listo! Te avisaremos de los próximos lanzamientos.';
+      msg.textContent = 'Done! We will let you know about upcoming releases.';
       nl.reset();
     });
   }

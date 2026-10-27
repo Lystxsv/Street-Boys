@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Street Boys — Camisas personalizadas</title>
-  <meta name="description" content="Camisas personalizadas con actitud urbana, calidad premium y diseños únicos.">
+  <title>Street Boys — Custom shirts</title>
+  <meta name="description" content="Custom shirts with street attitude, premium quality and unique designs.">
   <meta name="theme-color" content="#0A0A0A">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,37 +13,36 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <a class="skip-link" href="#contenido">Skip to content</a>
 
   <!-- ===== NAVBAR ===== -->
   <header class="site-header" id="header">
-    <nav class="container nav" aria-label="Principal">
-      <a class="nav__brand" href="#inicio" aria-label="Street Boys — inicio">
-        <!-- Reemplazar por el logo real -->
-        <span class="logo-slot">LOGO_STREET_BOYS</span>
+    <nav class="container nav" aria-label="Main">
+      <a class="nav__brand" href="#inicio" aria-label="Street Boys — home">
+        <img class="logo-img" src="img/logo-sb.webp" alt="Street Boys" width="56" height="56">
       </a>
 
       <ul class="nav__links" id="nav-links">
-        <li><a class="nav__link" href="#inicio" aria-current="page">Inicio</a></li>
-        <li><a class="nav__link" href="#camisas">Camisas</a></li>
-        <li><a class="nav__link" href="#personaliza">Personaliza</a></li>
-        <li><a class="nav__link" href="#colecciones">Colecciones</a></li>
-        <li><a class="nav__link" href="#nosotros">Nosotros</a></li>
-        <li><a class="nav__link" href="#contacto">Contacto</a></li>
+        <li><a class="nav__link" href="#inicio" aria-current="page">Home</a></li>
+        <li><a class="nav__link" href="#camisas">Shirts</a></li>
+        <li><a class="nav__link" href="#personaliza">Customize</a></li>
+        <li><a class="nav__link" href="#colecciones">Collections</a></li>
+        <li><a class="nav__link" href="#nosotros">About us</a></li>
+        <li><a class="nav__link" href="#contacto">Contact</a></li>
       </ul>
 
       <div class="nav__actions">
-        <button class="icon-btn" type="button" aria-label="Buscar">
+        <button class="icon-btn" type="button" aria-label="Search">
           <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
         </button>
-        <a class="icon-btn icon-btn--account" href="#cuenta" aria-label="Mi cuenta">
+        <a class="icon-btn icon-btn--account" href="#cuenta" aria-label="My account">
           <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg>
         </a>
-        <button class="icon-btn" type="button" id="cart-btn" aria-label="Carrito, 0 productos">
+        <button class="icon-btn" type="button" id="cart-btn" aria-label="Cart, 0 items">
           <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1 12H6L5 8Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>
           <span class="icon-btn__badge" id="cart-count" aria-hidden="true">0</span>
         </button>
-        <button class="nav__toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Abrir menú">
+        <button class="nav__toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu">
           <span></span><span></span><span></span>
         </button>
       </div>
@@ -61,19 +60,19 @@
       <div class="hero__overlay" aria-hidden="true"></div>
 
       <div class="container hero__inner">
-        <p class="eyebrow hero__eyebrow">Camisas personalizadas</p>
+        <p class="eyebrow hero__eyebrow">Custom shirts</p>
         <h1 class="display hero__title" id="hero-title">
-          <span class="line"><span>Viste tu estilo.</span></span>
-          <span class="line"><span>Diseña tu camisa.</span></span>
+          <span class="line"><span>Wear your style.</span></span>
+          <span class="line"><span>Design your shirt.</span></span>
         </h1>
-        <p class="lead hero__sub">Camisas personalizadas con actitud urbana, calidad premium y diseños únicos.</p>
+        <p class="lead hero__sub">Custom shirts with street attitude, premium quality and unique designs.</p>
         <div class="hero__cta">
-          <a class="btn" href="#personaliza">Personalizar mi camisa</a>
-          <a class="btn btn--outline" href="#colecciones">Ver colección</a>
+          <a class="btn" href="#personaliza">Customize my shirt</a>
+          <a class="btn btn--outline" href="#colecciones">View collection</a>
         </div>
       </div>
 
-      <a class="hero__scroll" href="#camisas" aria-label="Bajar a la siguiente sección">
+      <a class="hero__scroll" href="#camisas" aria-label="Scroll to the next section">
         <span>Scroll</span><i aria-hidden="true"></i>
       </a>
     </section>
@@ -82,69 +81,53 @@
       <div class="container">
         <header class="section-head">
           <div>
-            <p class="eyebrow reveal">Selección</p>
-            <h2 class="h1 reveal" id="camisas-title">Camisas más pedidas</h2>
+            <p class="eyebrow reveal">Selection</p>
+            <h2 class="h1 reveal" id="camisas-title">Most popular shirts</h2>
           </div>
-          <a class="link-arrow reveal" href="#colecciones">Ver todas <span aria-hidden="true">→</span></a>
+          <a class="link-arrow reveal" href="#colecciones">View all <span aria-hidden="true">→</span></a>
         </header>
 
         <ul class="product-grid product-grid--4" id="product-grid">
-          <li class="reveal" style="--d:0s">
-            <article class="card" data-product="oversize-negra">
+          <li class="reveal" style="--d:0.0s">
+            <article class="card" data-product="polo-negra">
               <div class="card__media">
-                <span class="card__tag">Más vendido</span>
-                <!-- Reemplazar placeholders por <img loading="lazy" ...> -->
-                <div class="placeholder">IMAGEN_CAMISA_01<br>Oversize negra · frente</div>
-                <div class="placeholder placeholder--alt">IMAGEN_CAMISA_01_B<br>Oversize negra · espalda</div>
+                <span class="card__tag">Best seller</span>
+                <img src="img/polo-negra-frente.webp" alt="Street Boys Black Polo — front" loading="lazy">
+                <img class="card__img--alt" src="img/polo-negra-espalda.webp" alt="" loading="lazy">
               </div>
               <div class="card__body">
-                <h3 class="card__title">Camisa Oversize Negra</h3>
-                <p class="card__price">$89.000 COP</p>
-                <a class="btn btn--sm btn--block" href="#personaliza" data-model="oversize" data-color="negro">Personalizar</a>
+                <h3 class="card__title">Street Boys Black Polo</h3>
+                <p class="card__price">$89,000 COP</p>
+                <a class="btn btn--sm btn--block" href="#personaliza" data-model="oversize" data-color="negro">Customize</a>
               </div>
             </article>
           </li>
 
           <li class="reveal" style="--d:0.1s">
-            <article class="card" data-product="oversize-blanca">
+            <article class="card" data-product="polo-azul">
               <div class="card__media">
-                <span class="card__tag">Nuevo</span>
-                <div class="placeholder">IMAGEN_CAMISA_02<br>Oversize blanca · frente</div>
-                <div class="placeholder placeholder--alt">IMAGEN_CAMISA_02_B<br>Oversize blanca · espalda</div>
+                <span class="card__tag">New</span>
+                <img src="img/polo-azul-frente.webp" alt="Street Boys Blue Polo — front" loading="lazy">
+                <img class="card__img--alt" src="img/polo-azul-espalda.webp" alt="" loading="lazy">
               </div>
               <div class="card__body">
-                <h3 class="card__title">Camisa Oversize Blanca</h3>
-                <p class="card__price">$89.000 COP</p>
-                <a class="btn btn--sm btn--block" href="#personaliza" data-model="oversize" data-color="blanco">Personalizar</a>
+                <h3 class="card__title">Street Boys Blue Polo</h3>
+                <p class="card__price">$89,000 COP</p>
+                <a class="btn btn--sm btn--block" href="#personaliza" data-model="oversize" data-color="negro">Customize</a>
               </div>
             </article>
           </li>
 
           <li class="reveal" style="--d:0.2s">
-            <article class="card" data-product="grafito-personalizada">
+            <article class="card" data-product="polo-blanca">
               <div class="card__media">
-                <div class="placeholder">IMAGEN_CAMISA_03<br>Grafito · frente</div>
-                <div class="placeholder placeholder--alt">IMAGEN_CAMISA_03_B<br>Grafito · espalda</div>
+                <img src="img/polo-blanca-frente.webp" alt="Street Boys White Polo — front" loading="lazy">
+                <img class="card__img--alt" src="img/polo-blanca-espalda.webp" alt="" loading="lazy">
               </div>
               <div class="card__body">
-                <h3 class="card__title">Camisa Grafito Personalizada</h3>
-                <p class="card__price">$95.000 COP</p>
-                <a class="btn btn--sm btn--block" href="#personaliza" data-model="clasica" data-color="gris">Personalizar</a>
-              </div>
-            </article>
-          </li>
-
-          <li class="reveal" style="--d:0.3s">
-            <article class="card" data-product="edicion-limitada">
-              <div class="card__media">
-                <span class="card__tag card__tag--outline">Edición limitada</span>
-                <div class="placeholder">IMAGEN_CAMISA_04<br>Edición limitada · frente</div>
-                <div class="placeholder placeholder--alt">IMAGEN_CAMISA_04_B<br>Edición limitada · espalda</div>
-              </div>
-              <div class="card__body">
-                <h3 class="card__title">Camisa Edición Limitada</h3>
-                <p class="card__price">$120.000 COP</p>
-                <a class="btn btn--sm btn--block" href="#personaliza" data-model="oversize" data-color="negro">Personalizar</a>
+                <h3 class="card__title">Street Boys White Polo</h3>
+                <p class="card__price">$89,000 COP</p>
+                <a class="btn btn--sm btn--block" href="#personaliza" data-model="oversize" data-color="blanco">Customize</a>
               </div>
             </article>
           </li>
@@ -156,10 +139,10 @@
       <div class="container">
         <header class="section-head">
           <div>
-            <p class="eyebrow reveal">Personalizador</p>
-            <h2 class="h1 reveal" id="cfg-title">Diseña tu camisa<br>Street Boys</h2>
+            <p class="eyebrow reveal">Customizer</p>
+            <h2 class="h1 reveal" id="cfg-title">Design your<br>Street Boys shirt</h2>
           </div>
-          <p class="lead reveal">Elige, sube tu arte y mira cómo queda antes de comprar.</p>
+          <p class="lead reveal">Choose, upload your art and see how it looks before you buy.</p>
         </header>
 
         <form class="cfg" id="cfg" novalidate>
@@ -167,18 +150,18 @@
           <!-- Vista previa -->
           <div class="cfg__preview">
             <div class="stage" id="stage" data-color="negro">
-              <svg class="shirt" viewBox="0 0 400 440" role="img" aria-label="Vista previa de tu camisa">
+              <svg class="shirt" viewBox="0 0 400 440" role="img" aria-label="Preview of your shirt">
                 <path class="shirt__body" id="shirt-body" d=""/>
                 <path class="shirt__neck" id="shirt-neck" d=""/>
               </svg>
               <div class="print" id="print" hidden>
-                <img id="print-img" alt="Tu diseño" hidden>
+                <img id="print-img" alt="Your design" hidden>
                 <span id="print-text"></span>
               </div>
             </div>
-            <div class="view-toggle" role="group" aria-label="Vista de la camisa">
-              <button type="button" class="view-toggle__btn is-active" data-view="front" aria-pressed="true">Frente</button>
-              <button type="button" class="view-toggle__btn" data-view="back" aria-pressed="false">Espalda</button>
+            <div class="view-toggle" role="group" aria-label="Shirt view">
+              <button type="button" class="view-toggle__btn is-active" data-view="front" aria-pressed="true">Front</button>
+              <button type="button" class="view-toggle__btn" data-view="back" aria-pressed="false">Back</button>
             </div>
             <p class="cfg__note" id="preview-note" aria-live="polite"></p>
           </div>
@@ -187,60 +170,60 @@
           <div class="cfg__controls">
 
             <fieldset class="fs">
-              <legend><span class="fs__n">01</span> Modelo</legend>
+              <legend><span class="fs__n">01</span> Style</legend>
               <div class="chips">
-                <label class="chip"><input type="radio" name="model" value="clasica"><span>Clásica</span></label>
+                <label class="chip"><input type="radio" name="model" value="clasica"><span>Classic</span></label>
                 <label class="chip"><input type="radio" name="model" value="oversize" checked><span>Oversize</span></label>
-                <label class="chip"><input type="radio" name="model" value="manga-larga"><span>Manga larga</span></label>
+                <label class="chip"><input type="radio" name="model" value="manga-larga"><span>Long sleeve</span></label>
               </div>
             </fieldset>
 
             <fieldset class="fs">
               <legend><span class="fs__n">02</span> Color</legend>
               <div class="swatches">
-                <label class="swatch"><input type="radio" name="color" value="negro" checked><i style="--c:#0A0A0A"></i><span>Negro</span></label>
-                <label class="swatch"><input type="radio" name="color" value="blanco"><i style="--c:#FFFFFF"></i><span>Blanco</span></label>
-                <label class="swatch"><input type="radio" name="color" value="gris"><i style="--c:#8A8A8A"></i><span>Gris</span></label>
+                <label class="swatch"><input type="radio" name="color" value="negro" checked><i style="--c:#0A0A0A"></i><span>Black</span></label>
+                <label class="swatch"><input type="radio" name="color" value="blanco"><i style="--c:#FFFFFF"></i><span>White</span></label>
+                <label class="swatch"><input type="radio" name="color" value="gris"><i style="--c:#8A8A8A"></i><span>Gray</span></label>
               </div>
             </fieldset>
 
             <fieldset class="fs">
-              <legend><span class="fs__n">03</span> Talla</legend>
+              <legend><span class="fs__n">03</span> Size</legend>
               <div class="chips chips--sizes">
                 <label class="chip"><input type="radio" name="size" value="S"><span>S</span></label>
                 <label class="chip"><input type="radio" name="size" value="M" checked><span>M</span></label>
                 <label class="chip"><input type="radio" name="size" value="L"><span>L</span></label>
                 <label class="chip"><input type="radio" name="size" value="XL"><span>XL</span></label>
               </div>
-              <a class="fs__link" href="#">Guía de tallas</a>
+              <a class="fs__link" href="#">Size guide</a>
             </fieldset>
 
             <fieldset class="fs">
-              <legend><span class="fs__n">04</span> Tu diseño</legend>
+              <legend><span class="fs__n">04</span> Your design</legend>
 
               <div class="drop" id="drop">
                 <input class="drop__input" type="file" id="cfg-file" accept="image/png,image/jpeg,image/webp,image/svg+xml" aria-describedby="drop-hint file-error">
                 <label class="drop__label" for="cfg-file">
-                  <strong>Sube tu diseño o logo</strong>
-                  <span id="drop-hint">PNG, JPG, WEBP o SVG · máx. 5 MB · PNG con fondo transparente recomendado</span>
+                  <strong>Upload your design or logo</strong>
+                  <span id="drop-hint">PNG, JPG, WEBP or SVG · max. 5 MB · PNG with transparent background recommended</span>
                 </label>
                 <div class="drop__file" id="drop-file" hidden>
                   <span id="drop-name"></span>
-                  <button type="button" class="drop__remove" id="drop-remove">Quitar</button>
+                  <button type="button" class="drop__remove" id="drop-remove">Remove</button>
                 </div>
               </div>
               <p class="cfg__error" id="file-error" role="alert"></p>
 
-              <label class="field-label" for="cfg-text">Texto personalizado <span class="text-muted" id="text-count">0/20</span></label>
-              <input class="field" id="cfg-text" name="text" type="text" maxlength="20" autocomplete="off" placeholder="Escribe tu texto">
+              <label class="field-label" for="cfg-text">Custom text <span class="text-muted" id="text-count">0/20</span></label>
+              <input class="field" id="cfg-text" name="text" type="text" maxlength="20" autocomplete="off" placeholder="Type your text">
             </fieldset>
 
             <fieldset class="fs">
-              <legend><span class="fs__n">05</span> Posición del diseño</legend>
+              <legend><span class="fs__n">05</span> Design position</legend>
               <div class="chips">
-                <label class="chip"><input type="radio" name="position" value="pecho" checked><span>Pecho</span></label>
-                <label class="chip"><input type="radio" name="position" value="espalda"><span>Espalda</span></label>
-                <label class="chip"><input type="radio" name="position" value="manga"><span>Manga</span></label>
+                <label class="chip"><input type="radio" name="position" value="pecho" checked><span>Chest</span></label>
+                <label class="chip"><input type="radio" name="position" value="espalda"><span>Back</span></label>
+                <label class="chip"><input type="radio" name="position" value="manga"><span>Sleeve</span></label>
               </div>
             </fieldset>
 
@@ -250,7 +233,7 @@
                 <p class="cfg__price" id="cfg-price" aria-live="polite">$0</p>
                 <p class="cfg__breakdown" id="cfg-breakdown"></p>
               </div>
-              <button class="btn" type="submit" id="cfg-add">Agregar al carrito</button>
+              <button class="btn" type="submit" id="cfg-add">Add to cart</button>
             </div>
             <p class="cfg__status" id="cfg-status" role="status"></p>
           </div>
@@ -262,32 +245,32 @@
       <div class="container">
         <header class="section-head">
           <div>
-            <p class="eyebrow eyebrow--dark reveal">Cómo funciona</p>
-            <h2 class="h1 reveal" id="pasos-title">Así de fácil</h2>
+            <p class="eyebrow eyebrow--dark reveal">How it works</p>
+            <h2 class="h1 reveal" id="pasos-title">It's that easy</h2>
           </div>
-          <p class="lead lead--dark reveal">Tres pasos y tu camisa está en camino.</p>
+          <p class="lead lead--dark reveal">Three steps and your shirt is on its way.</p>
         </header>
 
         <ol class="steps">
           <li class="step reveal" style="--d:0s">
             <span class="step__num" aria-hidden="true">01</span>
-            <h3 class="step__title">Elige tu camisa</h3>
-            <p class="step__text">Selecciona modelo, color y talla.</p>
+            <h3 class="step__title">Pick your shirt</h3>
+            <p class="step__text">Select style, color and size.</p>
           </li>
           <li class="step reveal" style="--d:0.12s">
             <span class="step__num" aria-hidden="true">02</span>
-            <h3 class="step__title">Diseña tu estilo</h3>
-            <p class="step__text">Sube tu arte, agrega texto o elige una plantilla.</p>
+            <h3 class="step__title">Design your style</h3>
+            <p class="step__text">Upload your art, add text or pick a template.</p>
           </li>
           <li class="step reveal" style="--d:0.24s">
             <span class="step__num" aria-hidden="true">03</span>
-            <h3 class="step__title">Recíbela en casa</h3>
-            <p class="step__text">Producimos tu camisa y la enviamos.</p>
+            <h3 class="step__title">Get it at home</h3>
+            <p class="step__text">We make your shirt and ship it.</p>
           </li>
         </ol>
 
         <div class="steps__cta reveal">
-          <a class="btn btn--dark" href="#personaliza">Empezar a diseñar</a>
+          <a class="btn btn--dark" href="#personaliza">Start designing</a>
         </div>
       </div>
     </section>
@@ -298,9 +281,9 @@
           <header class="section-head" style="margin-bottom:0">
             <div>
               <p class="eyebrow reveal">Lookbook</p>
-              <h2 class="h1 reveal" id="col-title">Colecciones<br>Street Boys</h2>
+              <h2 class="h1 reveal" id="col-title">Street Boys<br>Collections</h2>
             </div>
-            <p class="lead reveal">Tres formas de vestir la calle.</p>
+            <p class="lead reveal">Three ways to wear the street.</p>
           </header>
         </div>
       </div>
@@ -310,13 +293,13 @@
           <p class="eyebrow collection__num reveal">01 / 03</p>
           <h3 class="collection__name reveal" id="col-1">Black<br>Edition</h3>
           <div class="collection__body">
-            <a class="collection__media reveal" href="#coleccion-black" aria-label="Ver colección Black Edition" tabindex="-1">
+            <a class="collection__media reveal" href="#coleccion-black" aria-label="View Black Edition collection" tabindex="-1">
               <!-- Reemplazar por <img loading="lazy" ...> -->
               <div class="placeholder">IMAGEN_COLECCION_01<br>Black Edition · lookbook</div>
             </a>
             <div class="collection__aside reveal">
-              <p class="lead">Negro profundo con impresiones en blanco. Contraste puro.</p>
-              <a class="btn btn--outline" href="#coleccion-black">Ver colección <span aria-hidden="true">→</span></a>
+              <p class="lead">Deep black with white prints. Pure contrast.</p>
+              <a class="btn btn--outline" href="#coleccion-black">View collection <span aria-hidden="true">→</span></a>
             </div>
           </div>
         </div>
@@ -327,12 +310,12 @@
           <p class="eyebrow eyebrow--dark collection__num reveal">02 / 03</p>
           <h3 class="collection__name reveal" id="col-2">White<br>Essentials</h3>
           <div class="collection__body">
-            <a class="collection__media reveal" href="#coleccion-white" aria-label="Ver colección White Essentials" tabindex="-1">
+            <a class="collection__media reveal" href="#coleccion-white" aria-label="View White Essentials collection" tabindex="-1">
               <div class="placeholder">IMAGEN_COLECCION_02<br>White Essentials · lookbook</div>
             </a>
             <div class="collection__aside reveal">
-              <p class="lead lead--dark">Básicos blancos con trazo en negro. Limpios y directos.</p>
-              <a class="btn btn--dark" href="#coleccion-white">Ver colección <span aria-hidden="true">→</span></a>
+              <p class="lead lead--dark">White basics with black linework. Clean and direct.</p>
+              <a class="btn btn--dark" href="#coleccion-white">View collection <span aria-hidden="true">→</span></a>
             </div>
           </div>
         </div>
@@ -343,96 +326,32 @@
           <p class="eyebrow collection__num reveal">03 / 03</p>
           <h3 class="collection__name reveal" id="col-3">Custom<br>Club</h3>
           <div class="collection__body">
-            <a class="collection__media reveal" href="#coleccion-custom" aria-label="Ver colección Custom Club" tabindex="-1">
+            <a class="collection__media reveal" href="#coleccion-custom" aria-label="View Custom Club collection" tabindex="-1">
               <div class="placeholder">IMAGEN_COLECCION_03<br>Custom Club · lookbook</div>
             </a>
             <div class="collection__aside reveal">
-              <p class="lead">Tu arte, tu texto, tu camisa. La colección la armas tú.</p>
-              <a class="btn btn--outline" href="#coleccion-custom">Ver colección <span aria-hidden="true">→</span></a>
+              <p class="lead">Your art, your text, your shirt. You build the collection.</p>
+              <a class="btn btn--outline" href="#coleccion-custom">View collection <span aria-hidden="true">→</span></a>
             </div>
           </div>
         </div>
       </article>
     </section>
-    <!-- ===== BLOQUE 7: PRUEBA SOCIAL Y COMUNIDAD ===== -->
+    <!-- ===== BLOQUE 7: ASÍ SE VEN ===== -->
     <section class="section" id="comunidad" aria-labelledby="com-title">
       <div class="container">
-
         <header class="section-head">
           <div>
-            <p class="eyebrow reveal">Comunidad</p>
-            <h2 class="h1 reveal" id="com-title">Únete a los<br>Street Boys</h2>
+            <p class="eyebrow reveal">Street Boys</p>
+            <h2 class="h1 reveal" id="com-title">This is how<br>our polos look</h2>
           </div>
-          <a class="hashtag reveal" href="#" aria-label="Ver publicaciones con el hashtag StreetBoysCustom">#StreetBoysCustom</a>
+          <a class="btn reveal" href="https://wa.me/573242268951" target="_blank" rel="noopener">Order on WhatsApp</a>
         </header>
-
-        <!-- Fotos de la comunidad -->
-        <ul class="photos">
-          <li class="photo photo--lg reveal">
-            <figure>
-              <!-- Reemplazar por <img loading="lazy" alt="Cliente con su camisa personalizada"> -->
-              <div class="placeholder">IMAGEN_COMUNIDAD_01<br>Persona usando camisa personalizada</div>
-              <figcaption>@USUARIO_01</figcaption>
-            </figure>
-          </li>
-          <li class="photo reveal" style="--d:.08s"><figure><div class="placeholder">IMAGEN_COMUNIDAD_02</div><figcaption>@USUARIO_02</figcaption></figure></li>
-          <li class="photo reveal" style="--d:.16s"><figure><div class="placeholder">IMAGEN_COMUNIDAD_03</div><figcaption>@USUARIO_03</figcaption></figure></li>
-          <li class="photo reveal" style="--d:.24s"><figure><div class="placeholder">IMAGEN_COMUNIDAD_04</div><figcaption>@USUARIO_04</figcaption></figure></li>
-          <li class="photo reveal" style="--d:.32s"><figure><div class="placeholder">IMAGEN_COMUNIDAD_05</div><figcaption>@USUARIO_05</figcaption></figure></li>
+        <ul class="showcase">
+          <li class="reveal"><figure><img src="img/polo-negra-espalda.webp" alt="Street Boys black polo — back" loading="lazy"></figure></li>
+          <li class="reveal" style="--d:.1s"><figure><img src="img/polo-azul-espalda.webp" alt="Street Boys blue polo — back" loading="lazy"></figure></li>
+          <li class="reveal" style="--d:.2s"><figure><img src="img/polo-blanca-espalda.webp" alt="Street Boys white polo — back" loading="lazy"></figure></li>
         </ul>
-        <p class="photos__cta text-muted reveal">Etiquétanos con <strong>#StreetBoysCustom</strong> y aparece en la comunidad.</p>
-
-        <!-- Reseñas (sustituir por reseñas reales) -->
-        <h3 class="h3 block-title reveal">Lo que dicen</h3>
-        <div class="reviews">
-          <figure class="review reveal" style="--d:0s">
-            <blockquote><p>RESEÑA_01 — Texto real de un cliente (2 o 3 líneas).</p></blockquote>
-            <figcaption><strong>NOMBRE_CLIENTE_01</strong><span>Producto · Ciudad</span></figcaption>
-          </figure>
-          <figure class="review reveal" style="--d:.1s">
-            <blockquote><p>RESEÑA_02 — Texto real de un cliente (2 o 3 líneas).</p></blockquote>
-            <figcaption><strong>NOMBRE_CLIENTE_02</strong><span>Producto · Ciudad</span></figcaption>
-          </figure>
-          <figure class="review reveal" style="--d:.2s">
-            <blockquote><p>RESEÑA_03 — Texto real de un cliente (2 o 3 líneas).</p></blockquote>
-            <figcaption><strong>NOMBRE_CLIENTE_03</strong><span>Producto · Ciudad</span></figcaption>
-          </figure>
-        </div>
-
-        <!-- Beneficios -->
-        <ul class="benefits">
-          <li class="benefit reveal" style="--d:0s">
-            <h3 class="benefit__title">Envíos nacionales</h3>
-            <p>Llevamos tu camisa a todo el país.</p>
-          </li>
-          <li class="benefit reveal" style="--d:.1s">
-            <h3 class="benefit__title">Calidad premium</h3>
-            <p>Telas y estampados pensados para durar.</p>
-          </li>
-          <li class="benefit reveal" style="--d:.2s">
-            <h3 class="benefit__title">Diseños únicos</h3>
-            <p>Cada camisa se hace con tu arte.</p>
-          </li>
-        </ul>
-      </div>
-
-      <!-- Newsletter -->
-      <div class="newsletter">
-        <div class="container newsletter__inner">
-          <div class="reveal">
-            <h3 class="h2">Lanzamientos y descuentos primero</h3>
-            <p class="newsletter__lead">Déjanos tu correo y entérate antes que nadie.</p>
-          </div>
-          <form class="newsletter__form reveal" id="newsletter" novalidate>
-            <label class="visually-hidden" for="nl-email">Correo electrónico</label>
-            <div class="newsletter__row">
-              <input class="field" id="nl-email" name="email" type="email" required autocomplete="email" placeholder="tucorreo@ejemplo.com">
-              <button class="btn btn--dark" type="submit">Suscribirme</button>
-            </div>
-            <p class="newsletter__msg" id="nl-msg" role="status"></p>
-            <p class="newsletter__fine">Sin spam. Puedes darte de baja cuando quieras.</p>
-          </form>
-        </div>
       </div>
     </section>
 
@@ -443,50 +362,27 @@
     <div class="container">
       <div class="footer__grid">
         <div class="footer__brand">
-          <span class="logo-slot">LOGO_STREET_BOYS</span>
-          <p>Camisas personalizadas con actitud urbana.</p>
+          <img class="logo-img" src="img/logo-sb.webp" alt="Street Boys" width="56" height="56">
+          <p>Custom shirts with street attitude.</p>
         </div>
-        <nav class="footer__col" aria-label="Ayuda">
-          <h4>Ayuda</h4>
-          <ul>
-            <li><a href="#">Envíos</a></li>
-            <li><a href="#">Cambios</a></li>
-            <li><a href="#">Guía de tallas</a></li>
-            <li><a href="#">Preguntas frecuentes</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-          </ul>
-        </nav>
         <div class="footer__col">
-          <h4>Contacto</h4>
+          <h4>Contact</h4>
           <ul>
-            <li><a href="mailto:CORREO_CONTACTO">CORREO_CONTACTO</a></li>
-            <li><a href="#">WHATSAPP_NUMERO</a></li>
+            <li><a href="https://wa.me/573242268951" target="_blank" rel="noopener">+57 324 2268951</a></li>
           </ul>
         </div>
-        <nav class="footer__col" aria-label="Redes sociales">
-          <h4>Síguenos</h4>
-          <ul>
-            <li><a href="#" rel="noopener" target="_blank">Instagram</a></li>
-            <li><a href="#" rel="noopener" target="_blank">TikTok</a></li>
-            <li><a href="#" rel="noopener" target="_blank">Facebook</a></li>
-          </ul>
-        </nav>
       </div>
 
       <div class="footer__pay">
-        <p class="footer__pay-label">Medios de pago</p>
+        <p class="footer__pay-label">Payment method</p>
         <ul class="pay-list">
-          <!-- Editar según los medios que realmente aceptes -->
-          <li class="pay-chip">Visa</li>
-          <li class="pay-chip">Mastercard</li>
-          <li class="pay-chip">PSE</li>
-          <li class="pay-chip">Nequi</li>
+          <li class="pay-chip">Nequi · +57 324 2268951</li>
         </ul>
       </div>
 
       <div class="footer__bottom">
-        <span>© 2026 Street Boys. Todos los derechos reservados.</span>
-        <a class="to-top" href="#inicio">Volver arriba <span aria-hidden="true">↑</span></a>
+        <span>Created and designed by Esteban Chaveau<br>© 2026 Street Boys. All rights reserved.</span>
+        <a class="to-top" href="#inicio">Back to top <span aria-hidden="true">↑</span></a>
       </div>
     </div>
   </footer>

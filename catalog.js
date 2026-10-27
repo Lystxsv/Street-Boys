@@ -83,12 +83,12 @@
 
     const media = el('div', 'card__media');
     if (p.etiqueta) {
-      const outline = /limitad/i.test(p.etiqueta) ? ' card__tag--outline' : '';
+      const outline = /limited|limitad/i.test(p.etiqueta) ? ' card__tag--outline' : '';
       media.appendChild(el('span', 'card__tag' + outline, p.etiqueta));
     }
     if (front) {
       const img = el('img');
-      img.src = front; img.alt = `${name} — frente`; img.loading = 'lazy';
+      img.src = front; img.alt = `${name} — front`; img.loading = 'lazy';
       media.appendChild(img);
       if (back) {
         const img2 = el('img', 'card__img--alt');
@@ -96,13 +96,13 @@
         media.appendChild(img2);
       }
     } else {
-      media.appendChild(el('div', 'placeholder', 'SIN IMAGEN'));
+      media.appendChild(el('div', 'placeholder', 'NO IMAGE'));
     }
 
     const body = el('div', 'card__body');
     body.appendChild(el('h3', 'card__title', name));
-    body.appendChild(el('p', 'card__price', Number.isFinite(price) ? `$${price.toLocaleString('es-CO')} COP` : 'Consultar precio'));
-    const btn = el('a', 'btn btn--sm btn--block', 'Personalizar');
+    body.appendChild(el('p', 'card__price', Number.isFinite(price) ? `$${price.toLocaleString('en-US')} COP` : 'Ask for price'));
+    const btn = el('a', 'btn btn--sm btn--block', 'Customize');
     btn.href = '#personaliza';
     btn.dataset.model = model;
     btn.dataset.color = color;
@@ -134,6 +134,6 @@
     window.dispatchEvent(new CustomEvent('streetboys:prices', { detail: prices }));
   }
 
-  loadProducts().catch((e) => console.warn('Street Boys: no se pudo leer la hoja de camisas.', e));
-  loadPrices().catch((e) => console.warn('Street Boys: no se pudo leer la hoja de precios.', e));
+  loadProducts().catch((e) => console.warn('Street Boys: could not read the shirts sheet.', e));
+  loadPrices().catch((e) => console.warn('Street Boys: could not read the prices sheet.', e));
 })();

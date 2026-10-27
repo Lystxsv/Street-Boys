@@ -1,5 +1,4 @@
 id,nombre,precio,etiqueta,imagen_frente,imagen_espalda,modelo,color,activo
-oversize-negra,Camisa Oversize Negra,89000,Más vendido,,,oversize,negro,SI
-oversize-blanca,Camisa Oversize Blanca,89000,Nuevo,,,oversize,blanco,SI
-grafito-personalizada,Camisa Grafito Personalizada,95000,,,,clasica,gris,SI
-edicion-limitada,Camisa Edición Limitada,120000,Edición limitada,,,oversize,negro,SI
+polo-negra,Street Boys Black Polo,89000,Best seller,img/polo-negra-frente.webp,img/polo-negra-espalda.webp,oversize,negro,SI
+polo-azul,Street Boys Blue Polo,89000,New,img/polo-azul-frente.webp,img/polo-azul-espalda.webp,oversize,negro,SI
+polo-blanca,Street Boys White Polo,89000,,img/polo-blanca-frente.webp,img/polo-blanca-espalda.webp,oversize,blanco,SI
